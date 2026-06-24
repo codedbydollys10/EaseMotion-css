@@ -1,0 +1,304 @@
+/* Keyboard Shortcut Badge Component — style.css */
+:root {
+  --ease-kbd-bg: #f3f4f6;
+  --ease-kbd-color: #111827;
+  --ease-kbd-border: #d1d5db;
+  --ease-kbd-shadow: 0 2px 6px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --ease-kbd-radius: 0.45rem;
+  --ease-kbd-padding: 0.35rem 0.55rem;
+  --ease-kbd-gap: 0.35rem;
+  --ease-kbd-transition: 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-kbd-font-size: 0.82rem;
+  --ease-kbd-font-weight: 500;
+  --ease-kbd-font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #111827;
+  padding: 2rem 1rem 3rem;
+}
+
+.ease-kbd-demo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ease-kbd-demo header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ease-kbd-demo h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+
+.ease-kbd-demo p.lead {
+  max-width: 720px;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #6b7280;
+}
+
+.ease-kbd-showcase {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.ease-kbd-example {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.ease-kbd-example h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #111827;
+}
+
+.ease-kbd-example p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.ease-kbd-example > div {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+/* ============================================
+   CORE COMPONENT
+   ============================================ */
+
+.ease-kbd {
+  display: inline-block;
+  padding: var(--ease-kbd-padding);
+  background: var(--ease-kbd-bg);
+  color: var(--ease-kbd-color);
+  border: 1px solid var(--ease-kbd-border);
+  border-radius: var(--ease-kbd-radius);
+  box-shadow: var(--ease-kbd-shadow);
+  font-family: var(--ease-kbd-font-family);
+  font-size: var(--ease-kbd-font-size);
+  font-weight: var(--ease-kbd-font-weight);
+  line-height: 1;
+  min-width: 1.75rem;
+  text-align: center;
+  white-space: nowrap;
+  transition: all var(--ease-kbd-transition);
+  cursor: default;
+  user-select: none;
+}
+
+.ease-kbd:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================
+   KEYBOARD GROUP
+   ============================================ */
+
+.ease-kbd-group {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ease-kbd-gap);
+  flex-wrap: wrap;
+}
+
+.ease-kbd-separator {
+  font-size: var(--ease-kbd-font-size);
+  font-weight: 500;
+  color: #9ca3af;
+  user-select: none;
+}
+
+/* ============================================
+   COMMAND PALETTE
+   ============================================ */
+
+.ease-kbd-command {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: all var(--ease-kbd-transition);
+}
+
+.ease-kbd-command:hover {
+  border-color: #d1d5db;
+  background: #f9fafb;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.ease-kbd-command .ease-kbd-group {
+  margin-left: auto;
+  gap: 0.25rem;
+}
+
+/* ============================================
+   SIZE VARIANTS
+   ============================================ */
+
+.ease-kbd-sm {
+  --ease-kbd-padding: 0.25rem 0.4rem;
+  --ease-kbd-font-size: 0.7rem;
+}
+
+.ease-kbd-lg {
+  --ease-kbd-padding: 0.45rem 0.75rem;
+  --ease-kbd-font-size: 0.95rem;
+}
+
+/* ============================================
+   DARK VARIANT
+   ============================================ */
+
+.ease-kbd-dark {
+  --ease-kbd-bg: #1f2937;
+  --ease-kbd-color: #f3f4f6;
+  --ease-kbd-border: #374151;
+  --ease-kbd-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.ease-kbd-dark .ease-kbd-separator {
+  color: #6b7280;
+}
+
+/* ============================================
+   GLASSMORPHISM VARIANT
+   ============================================ */
+
+.ease-kbd-glass {
+  --ease-kbd-bg: rgba(255, 255, 255, 0.1);
+  --ease-kbd-color: #ffffff;
+  --ease-kbd-border: rgba(255, 255, 255, 0.2);
+  --ease-kbd-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.ease-kbd-glass .ease-kbd-separator {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================
+   INTERACTIVE VARIANT
+   ============================================ */
+
+.ease-kbd-interactive {
+  cursor: pointer;
+  user-select: auto;
+}
+
+.ease-kbd-interactive:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.ease-kbd-interactive:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .ease-kbd-example > div {
+    padding: 1.5rem;
+  }
+
+  .ease-kbd-group {
+    gap: 0.25rem;
+  }
+
+  .ease-kbd {
+    --ease-kbd-padding: 0.3rem 0.45rem;
+    --ease-kbd-font-size: 0.75rem;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .ease-kbd,
+  .ease-kbd-command {
+    transition: none !important;
+  }
+
+  .ease-kbd:active,
+  .ease-kbd-interactive:hover {
+    transform: none !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .ease-kbd {
+    border-width: 2px;
+    font-weight: 600;
+  }
+
+  .ease-kbd-group {
+    gap: 0.5rem;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .ease-kbd {
+    border-color: #000;
+    box-shadow: none;
+  }
+}
+
+/* ============================================
+   COLOR THEMES
+   ============================================ */
+
+.ease-kbd-success {
+  --ease-kbd-bg: #ecfdf5;
+  --ease-kbd-color: #065f46;
+  --ease-kbd-border: #a7f3d0;
+}
+
+.ease-kbd-warning {
+  --ease-kbd-bg: #fffbeb;
+  --ease-kbd-color: #78350f;
+  --ease-kbd-border: #fce7f3;
+}
+
+.ease-kbd-danger {
+  --ease-kbd-bg: #fef2f2;
+  --ease-kbd-color: #7f1d1d;
+  --ease-kbd-border: #fee2e2;
+}
+
+.ease-kbd-info {
+  --ease-kbd-bg: #eff6ff;
+  --ease-kbd-color: #0c2d6b;
+  --ease-kbd-border: #bfdbfe;
+}

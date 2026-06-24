@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keyboard Shortcut Badge Component — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="ease-kbd-demo">
+    <header>
+      <h1>Keyboard Shortcut Badge</h1>
+      <p class="lead">Modern keyboard shortcut badges for documentation, UI hints, and command palettes. Beautiful, responsive, and fully customizable.</p>
+    </header>
+
+    <section class="ease-kbd-showcase">
+      <!-- Single Keys -->
+      <article class="ease-kbd-example">
+        <h2>Single Keys</h2>
+        <p>Individual keyboard key badges</p>
+        <div>
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #6b7280;">Common keys:</p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <kbd class="ease-kbd">Esc</kbd>
+            <kbd class="ease-kbd">Tab</kbd>
+            <kbd class="ease-kbd">Ctrl</kbd>
+            <kbd class="ease-kbd">Shift</kbd>
+            <kbd class="ease-kbd">Alt</kbd>
+            <kbd class="ease-kbd">Enter</kbd>
+            <kbd class="ease-kbd">Space</kbd>
+            <kbd class="ease-kbd">Delete</kbd>
+          </div>
+          <p style="margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: #6b7280;">Letter keys:</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <kbd class="ease-kbd">A</kbd>
+            <kbd class="ease-kbd">K</kbd>
+            <kbd class="ease-kbd">P</kbd>
+            <kbd class="ease-kbd">S</kbd>
+            <kbd class="ease-kbd">F</kbd>
+          </div>
+        </div>
+      </article>
+
+      <!-- Shortcut Combinations (Windows/Linux) -->
+      <article class="ease-kbd-example">
+        <h2>Windows/Linux Shortcuts</h2>
+        <p>Common keyboard combinations</p>
+        <div>
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #6b7280;">VS Code shortcuts:</p>
+          <div style="display: grid; gap: 0.75rem;">
+            <div>Quick Open: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div></div>
+            <div>Command Palette: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">Shift</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div></div>
+            <div>Find: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">F</kbd>
+            </div></div>
+            <div>Save: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">S</kbd>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mac Shortcuts -->
+      <article class="ease-kbd-example">
+        <h2>Mac Shortcuts</h2>
+        <p>macOS keyboard combinations with command symbol</p>
+        <div>
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #6b7280;">macOS shortcuts:</p>
+          <div style="display: grid; gap: 0.75rem;">
+            <div>Quick Open: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">⌘</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div></div>
+            <div>Command Palette: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">⌘</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">Shift</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div></div>
+            <div>Find: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">⌘</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">F</kbd>
+            </div></div>
+            <div>Save: <div class="ease-kbd-group" style="margin-top: 0.5rem;">
+              <kbd class="ease-kbd">⌘</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">S</kbd>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Small Variant -->
+      <article class="ease-kbd-example">
+        <h2>Small Size Variant</h2>
+        <p>Compact keyboard shortcuts</p>
+        <div>
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #6b7280;">Using <code style="background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 0.3rem;">ease-kbd-sm</code>:</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd ease-kbd-sm">Ctrl</kbd>
+              <span class="ease-kbd-separator" style="font-size: 0.7rem;">+</span>
+              <kbd class="ease-kbd ease-kbd-sm">K</kbd>
+            </div>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd ease-kbd-sm">⌘</kbd>
+              <span class="ease-kbd-separator" style="font-size: 0.7rem;">+</span>
+              <kbd class="ease-kbd ease-kbd-sm">⌥</kbd>
+              <span class="ease-kbd-separator" style="font-size: 0.7rem;">+</span>
+              <kbd class="ease-kbd ease-kbd-sm">I</kbd>
+            </div>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd ease-kbd-sm">Ctrl</kbd>
+              <span class="ease-kbd-separator" style="font-size: 0.7rem;">+</span>
+              <kbd class="ease-kbd ease-kbd-sm">Shift</kbd>
+              <span class="ease-kbd-separator" style="font-size: 0.7rem;">+</span>
+              <kbd class="ease-kbd ease-kbd-sm">C</kbd>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Large Variant -->
+      <article class="ease-kbd-example">
+        <h2>Large Size Variant</h2>
+        <p>Prominent keyboard shortcuts for documentation</p>
+        <div>
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #6b7280;">Using <code style="background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 0.3rem;">ease-kbd-lg</code>:</p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd ease-kbd-lg">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd ease-kbd-lg">Enter</kbd>
+            </div>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd ease-kbd-lg">⌘</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd ease-kbd-lg">⌫</kbd>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dark Variant -->
+      <article class="ease-kbd-example">
+        <h2>Dark Theme</h2>
+        <p>Dark mode keyboard shortcuts</p>
+        <div style="background: #1f2937; padding: 2rem; border-radius: 1rem;">
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: #9ca3af;">Dark mode shortcuts:</p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <kbd class="ease-kbd ease-kbd-dark">Ctrl</kbd>
+            <kbd class="ease-kbd ease-kbd-dark">Alt</kbd>
+            <kbd class="ease-kbd ease-kbd-dark">Shift</kbd>
+          </div>
+          <p style="margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: #9ca3af;">Dark combination:</p>
+          <div class="ease-kbd-group">
+            <kbd class="ease-kbd ease-kbd-dark">⌘</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd ease-kbd-dark">K</kbd>
+          </div>
+        </div>
+      </article>
+
+      <!-- Glassmorphism Variant -->
+      <article class="ease-kbd-example">
+        <h2>Glassmorphism Effect</h2>
+        <p>Frosted glass keyboard shortcuts</p>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 1rem;">
+          <p style="margin: 0 0 1rem; font-size: 0.95rem; color: rgba(255,255,255,0.8);">Glass effect keys:</p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <kbd class="ease-kbd ease-kbd-glass">Ctrl</kbd>
+            <kbd class="ease-kbd ease-kbd-glass">Alt</kbd>
+            <kbd class="ease-kbd ease-kbd-glass">Shift</kbd>
+          </div>
+          <p style="margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: rgba(255,255,255,0.8);">Glass combination:</p>
+          <div class="ease-kbd-group">
+            <kbd class="ease-kbd ease-kbd-glass">⌘</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd ease-kbd-glass">Shift</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd ease-kbd-glass">A</kbd>
+          </div>
+        </div>
+      </article>
+
+      <!-- Command Palette -->
+      <article class="ease-kbd-example">
+        <h2>Command Palette Style</h2>
+        <p>Command hints for search bars and inputs</p>
+        <div>
+          <div class="ease-kbd-command">
+            <span>Search files...</span>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div>
+          </div>
+          <div class="ease-kbd-command" style="margin-top: 0.75rem;">
+            <span>Go to command...</span>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">Shift</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">P</kbd>
+            </div>
+          </div>
+          <div class="ease-kbd-command" style="margin-top: 0.75rem;">
+            <span>Find in project...</span>
+            <div class="ease-kbd-group">
+              <kbd class="ease-kbd">Ctrl</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">Shift</kbd>
+              <span class="ease-kbd-separator">+</span>
+              <kbd class="ease-kbd">F</kbd>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Color Themes -->
+      <article class="ease-kbd-example">
+        <h2>Color Variants</h2>
+        <p>Contextual color-coded shortcuts</p>
+        <div>
+          <p style="margin: 0 0 0.75rem; font-size: 0.95rem; color: #6b7280;">Success:</p>
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <kbd class="ease-kbd ease-kbd-success">✓</kbd>
+            <kbd class="ease-kbd ease-kbd-success">Enter</kbd>
+          </div>
+          <p style="margin: 0 0 0.75rem; font-size: 0.95rem; color: #6b7280;">Warning:</p>
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <kbd class="ease-kbd ease-kbd-warning">!</kbd>
+            <kbd class="ease-kbd ease-kbd-warning">Delete</kbd>
+          </div>
+          <p style="margin: 0 0 0.75rem; font-size: 0.95rem; color: #6b7280;">Danger:</p>
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <kbd class="ease-kbd ease-kbd-danger">✕</kbd>
+            <kbd class="ease-kbd ease-kbd-danger">Esc</kbd>
+          </div>
+          <p style="margin: 0 0 0.75rem; font-size: 0.95rem; color: #6b7280;">Info:</p>
+          <div style="display: flex; gap: 0.5rem;">
+            <kbd class="ease-kbd ease-kbd-info">?</kbd>
+            <kbd class="ease-kbd ease-kbd-info">Help</kbd>
+          </div>
+        </div>
+      </article>
+
+      <!-- Documentation Example -->
+      <article class="ease-kbd-example">
+        <h2>Documentation Example</h2>
+        <p>Real-world usage in documentation</p>
+        <div>
+          <h3 style="margin: 0 0 1rem; font-size: 1rem;">VS Code Keyboard Shortcuts</h3>
+          <p style="margin: 0 0 0.75rem; color: #6b7280;">Press <div class="ease-kbd-group" style="display: inline-flex;">
+            <kbd class="ease-kbd">Ctrl</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd">Shift</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd">P</kbd>
+          </div> to open the command palette.</p>
+          <p style="margin: 0 0 0.75rem; color: #6b7280;">Use <div class="ease-kbd-group" style="display: inline-flex;">
+            <kbd class="ease-kbd">Ctrl</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd">D</kbd>
+          </div> to select the next occurrence.</p>
+          <p style="margin: 0; color: #6b7280;">Navigate between problems with <div class="ease-kbd-group" style="display: inline-flex;">
+            <kbd class="ease-kbd">F8</kbd>
+          </div> and <div class="ease-kbd-group" style="display: inline-flex;">
+            <kbd class="ease-kbd">Shift</kbd>
+            <span class="ease-kbd-separator">+</span>
+            <kbd class="ease-kbd">F8</kbd>
+          </div>.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
